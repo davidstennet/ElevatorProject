@@ -12,13 +12,11 @@ int direction (1 for up 0 for down)
 int numberOfFloors
 int nextFloor
 int currentFloor
-int[numberOfFloors] 
+int[numberOfFloors] pressedFloors
 ----------------------------
 printElevator() functin that prints the building with current floor you are on
 could loook something like this:
 
-Direction: Up
-Pressed Floors: 1, 2, 4, 7  
 
 8 |
 7 |
@@ -30,15 +28,22 @@ Pressed Floors: 1, 2, 4, 7
 1 |
 
 ----------------------------
+David
 printCurrentFloor() once it reaches a floor that is nextFloor print controls for what you want to do next
 
 Getting off? (Y for yes, n for no): 
 if yes:
     Have a great day!
 else:
-    if ()
+    if 
 
 ----------------------------
+David
+addRandom()
+
+----------------------------
+moveUp() updates variables when moving up a floor
+moveDown() updates variables whem mvoing down a floor
 
 
 
