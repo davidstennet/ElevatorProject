@@ -1,0 +1,34 @@
+Main
+we should have a loop in main that goes until the person gets off the Elevator
+Should also add some sort of print delay so the elevator goes up or down slowly
+
+
+
+Elevator class
+Data Members:
+int capacity
+int numberOfPeople
+int direction (1 for up 0 for down)
+int numberOfFloors
+int nextFloor
+----------------------------
+printElevator() functin that prints the building with current floor you are on
+could loook something like this:
+
+8 |
+7 |
+6 |
+5 | [Elevator]
+4 |
+3 |
+2 |
+1 |
+
+----------------------------
+printCurrentFloor() once it reaches a floor that is nextFloor print controls for what you want to do next
+
+----------------------------
+
+
+
+
