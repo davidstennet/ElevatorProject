@@ -10,7 +10,7 @@ class Building {
         void simulate();  //handles moving elevator and user input
         void printStatus() ;
     
-    private:
+    protected:
         int numOfFloors;
         Elevator elevator;
     };

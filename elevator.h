@@ -1,5 +1,5 @@
 #include <iostream>
-//#include "Building.h"
+#include "building.h"
 using namespace std;
 
 class Elevator  {
