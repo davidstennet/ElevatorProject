@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include "building.h"
 using namespace std;
 
@@ -6,6 +7,7 @@ class Elevator : public Building {
     public:
         Elevator();
         Elevator(int floors);
+        ~Elevator();
         void moveUp();
         void moveDown();
         void printElevator() const;
@@ -15,5 +17,5 @@ class Elevator : public Building {
     private:
         int direction;
         int currentFloor;
-        //int[numberOfFloors] pressedFloors;
+        int* pressedFloors; // Represnts a pointer to an array for what floors are pressed
 };

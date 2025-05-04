@@ -9,13 +9,13 @@ Elevator::Elevator() {
 }
 
 Elevator::Elevator(int floors) {
-    // Add number for floors from inherited class
     numberOfFloors = floors;
-    currentFloor = 1;
+    currentFloor = 1; // Default is the 1st floor
+    pressedFloors = new int[numberOfFloors];
 }
 
-void Elevator::printElevator() const {
-
+Elevator::~Elevator() {
+    delete[] pressedFloors;
 }
 
 void Elevator::printElevator() const{
