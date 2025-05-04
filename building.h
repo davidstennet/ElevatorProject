@@ -11,6 +11,7 @@ class Building {
         void printStatus() ;
     
     protected:
+        void clearScreen();
         int numOfFloors;
         Elevator elevator;
     };

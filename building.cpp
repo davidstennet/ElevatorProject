@@ -2,24 +2,20 @@
 #include <iostream>
 using namespace std;
 
-class Building {
-    private:
-        int floors;
-        Elevator elevator;
-    
-    public:
-        Building(int numFloors) : floors(numFloors), elevator(numFloors) {}
 
-        void clearScreen() {
-            for (int i = 0; i < 50; ++i) cout << endl;
-        }
-
-        /*void simulate() {
-            while (true) {
-                clearScreen();
-                elevator.printElevator();
-                //elevator.move();
-            }
-        }*/
+Building::Building(int floors)
+    : numOfFloors(floors), elevator(floors) {}
         
-    };
+void Building::clearScreen() {
+    for (int i = 0; i < 50; ++i) cout << endl;
+}
+
+/*void Building::simulate() {
+    while (true) {
+        clearScreen();
+        elevator.printElevator();
+        //elevator.move();
+     }
+ }*/
+        
+    
