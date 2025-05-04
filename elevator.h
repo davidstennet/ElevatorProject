@@ -7,7 +7,7 @@ class Elevator  {
         Elevator(int numberOfFloors);
         void moveUp();
         void moveDown();
-        void printElevator();
+        void printElevator() const;
         void printCurrentFloor();
         void addRandom();
 
@@ -15,4 +15,4 @@ class Elevator  {
         int direction;
         int currentFloor;
         //int[numberOfFloors] pressedFloors;
-}
+};

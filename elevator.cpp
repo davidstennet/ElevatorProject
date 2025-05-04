@@ -12,8 +12,14 @@ void Elevator::moveDown() {
 
 }
 
-void Elevator::printElevator() {
-
+void Elevator::printElevator() const{
+    for (int floor = numberOfFloors; floor >= 1; --floor) {
+        cout << floor << " | ";
+        if (floor == currentFloor) {
+            cout << "[Elevator]";
+        }
+        cout << endl;
+    }
 }
 
 void Elevator::printCurrentFloor() {
