@@ -3,13 +3,18 @@ using namespace std;
 #include "elevator.h"
 
 // Constructor for Elevator
+Elevator::Elevator() {
+    numberOfFloors = 0;
+    currentFloor = 0;
+}
+
 Elevator::Elevator(int floors) {
     // Add number for floors from inherited class
     numberOfFloors = floors;
     currentFloor = 1;
 }
 
-void Elevator::printElevator() {
+void Elevator::printElevator() const {
 
 }
 

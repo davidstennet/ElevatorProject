@@ -1,10 +1,10 @@
+#pragma once
 #include <iostream>
-#include "elevator.h"
-
 using namespace std;
 
 class Building {
     public:
+        Building();
         Building(int floors);
     
         void simulate();  //handles moving elevator and user input
@@ -12,6 +12,5 @@ class Building {
     
     protected:
         void clearScreen();
-        int numOfFloors;
-        Elevator elevator;
-    };
+        int numberOfFloors;
+};

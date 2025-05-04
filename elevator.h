@@ -2,9 +2,10 @@
 #include "building.h"
 using namespace std;
 
-class Elevator  {
+class Elevator : public Building {
     public:
-        Elevator(int numberOfFloors);
+        Elevator();
+        Elevator(int floors);
         void moveUp();
         void moveDown();
         void printElevator() const;
