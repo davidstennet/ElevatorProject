@@ -56,7 +56,20 @@ void Elevator::moveDown() {
 }
 
 void Elevator::addRandom() {
+    stepCounter++;  
 
+    if (stepCounter % 3 == 0) {  //Every 3 steps
+        int floorRequest = rand() % numberOfFloors + 1;  
+
+        //Check if it's not the current floor & hasnt already been requested
+        if (floorRequest != currentFloor && pressedFloors[floorRequest] == 0) {
+            pressedFloors[floorRequest] = 1;  //Mark floor as requested
+
+            string dir = (floorRequest > currentFloor) ? "down" : "up";
+            cout << "Someone on floor " << floorRequest
+                 << " pressed the button to go " << dir << "." << endl;
+        }
+    }
 }
 
 
