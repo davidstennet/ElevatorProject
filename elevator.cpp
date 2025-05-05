@@ -70,6 +70,10 @@ void Elevator::addRandom() {
                  << " pressed the button to go " << dir << "." << endl;
         }
     }
+
+int Elevator::getDirection() const {
+    return direction;
+}
 }
 
 

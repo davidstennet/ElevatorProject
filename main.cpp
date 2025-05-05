@@ -16,7 +16,21 @@ int main() {
 
     // This while loop 
     while (inElevator) {
+        E1.addRandom();
+        E1.printElevator();
 
+        if (E1.getDirection() == 1) {
+            E1.moveUp();
+        } else {
+            E1.moveDown();
+        }
+
+        char keepGoing;
+        cout << "Continue simulation? (Y/N): ";
+        cin >> keepGoing;
+        if (toupper(keepGoing) == 'N') {
+            inElevator = false;
+        }
     }
 
     return 0;
