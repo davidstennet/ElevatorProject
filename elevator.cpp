@@ -9,6 +9,7 @@ Elevator::Elevator() {
     direction = -1;
 }
 
+// Constructor with number of floors
 Elevator::Elevator(int floors) {
     numberOfFloors = floors;
     currentFloor = 1; // Default is the 1st floor
@@ -22,10 +23,12 @@ Elevator::Elevator(int floors) {
     }
 }
 
+// Destructor that deletes the array
 Elevator::~Elevator() {
     delete[] pressedFloors;
 }
 
+// Prints out 
 void Elevator::printElevator() const{
     for (int floor = numberOfFloors; floor >= 1; --floor) {
         cout << floor << " | ";
